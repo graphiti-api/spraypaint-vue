@@ -19,7 +19,7 @@ node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --repor
 
 # Check for Travis CI and Circle-CI environment
 if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
-  cat coverage/lcov.info
+  cat coverage/lcov.info || echo "Coveralls upload failed"
   # Upload to coveralls.io
   ./node_modules/.bin/codecov && rm -rf ./coverage
 fi
