@@ -21,5 +21,5 @@ node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --repor
 if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
   cat coverage/lcov.info || echo "Coveralls upload failed"
   # Upload to coveralls.io
-  ./node_modules/.bin/codecov && rm -rf ./coverage
+  ./node_modules/.bin/codecov
 fi
