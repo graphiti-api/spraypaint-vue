@@ -17,8 +17,8 @@ TSCONFIG=./tsconfig.json
 node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --report lcov --report text \
      ./node_modules/mocha/bin/_mocha -- -R spec --check-leaks ./build/test/**/*.js
 
-# Check for Travis CI and Circle-CI environment
-if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
+# Check for Travis CI
+if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
   # Push to coveralls.io
   cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   ## Push to codecov
