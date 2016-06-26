@@ -1,6 +1,6 @@
 /**
  * rachelle
- * @version 0.0.11
+ * @version 0.1.0
  * @copyright (c) 2016 KFlash
  * @license MIT <undefined/blob/master/LICENSE>
  */
