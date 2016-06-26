@@ -23,8 +23,6 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
   cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
   ## Push to codecov
   ./node_modules/.bin/codecov
-  # Remove the directory
+  # Remove the coverage directory
   rm -rf ./coverage
-   
- # - bash <(curl -s https://codecov.io/bash)
 fi
