@@ -1,10 +1,9 @@
 {
   "name": "rachelle",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
-  "jsnext:main": "dist/rachelle.mjs",
-  "module": "dist/rachelle.mjs",
+  "jsnext:main": "dist/rachelle.es.js",
   "author": "KFlash",
   "license": "MIT",
   "engines": {
@@ -71,7 +70,7 @@
     "codecov": "^1.0.1",
     "coveralls": "^2.11.9",
     "ignore-styles": "^4.0.0",
-    "jsdom": "^9.2.1",
+    "jsdom": "^9.3.1",
     "mocha": "^2.5.3",
     "npm-check-updates": "2.6.7",
     "istanbul": "github:gotwarlost/istanbul#v1",

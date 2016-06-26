@@ -30,11 +30,6 @@ export default {
       dest: resolve('dist/rachelle.es.js'),
       format: 'es',
       sourceMap: false
-    },
-    {
-      dest: resolve('dist/rachelle.mjs'),
-      format: 'es',
-      sourceMap: false
     }
   ]
 };

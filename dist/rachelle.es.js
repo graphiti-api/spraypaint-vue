@@ -1,10 +1,10 @@
 /**
  * rachelle
- * @version 0.0.10
+ * @version 0.0.11
  * @copyright (c) 2016 KFlash
  * @license MIT <undefined/blob/master/LICENSE>
  */
-exports.default = {
+var rachelle = {
     // 'a' should not be covered
     a: function () {
         var uncovered = true;
@@ -12,3 +12,5 @@ exports.default = {
     },
     b: function () { return true; }
 };
+
+export default rachelle;

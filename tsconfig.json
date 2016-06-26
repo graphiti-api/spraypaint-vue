@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-	"allowJs": false,
+		"allowJs": false,
 		"allowUnreachableCode": false,
 		"declaration": false,
 		"experimentalDecorators": true,

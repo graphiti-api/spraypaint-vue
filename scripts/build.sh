@@ -36,6 +36,6 @@ fi
 # validate all source files
 ( exec "./scripts/lint-src.sh" )
 
- # bundle a production and development bundle with Rollup
- $BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
- $BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
+# bundle a production and development bundle with Rollup
+$BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
+$BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
