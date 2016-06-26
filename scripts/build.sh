@@ -3,13 +3,15 @@
 # if the tests fail, abort (errexit)
 set -e
 
+BIN=$PWD/node_modules/.bin
+
 # Travis stuff
 if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
 # Transpile TypeScript source code to ES6
 TSCONFIG=./tsconfig.json
 
- $(npm bin)/tsc  \
+ $BIN/tsc  \
         --outDir ./build \
         -t es6 \
         --skipLibCheck \
@@ -32,11 +34,11 @@ else
 fi
 
 # validate all source files
-$(npm bin)/tslint -c ./tslint.json src/**/*.ts src/**/*.tsx
+$BIN/tslint -c ./tslint.json src/**/*.ts src/**/*.tsx
 
 # transpile TypeScript down to ES5 and builds a bundle both for development and production with Rollup
-$(npm bin)/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
-$(npm bin)/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
+$BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
+$BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
 
 
 
