@@ -33,12 +33,9 @@ else
   mkdir -p ./dist
 fi
 
-# validate all source files
-$BIN/tslint -c ./tslint.json src/**/*.ts src/**/*.tsx
+# validate all source and test files
+( exec "./scripts/lint.sh" )
 
-# transpile TypeScript down to ES5 and builds a bundle both for development and production with Rollup
-$BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
-$BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
-
-
-
+ # bundle a production and development bundle with Rollup
+ $BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
+ $BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";

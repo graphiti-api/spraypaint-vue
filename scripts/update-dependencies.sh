@@ -3,4 +3,4 @@
 set -e
 
 # update NPM packages
-$(npm bin)/ncu -u
+./node_modules/.bin/ncu -u

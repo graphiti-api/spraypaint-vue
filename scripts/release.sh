@@ -14,7 +14,7 @@ npm publish
 # get correct version
 VERSION=$(cat package.json | grep "version" | sed 's/"version": "\(.*\)",/\1/' | sed 's/[[:space:]]//g')
 
- # Add and push to Gitbub
+ # Push to Gitbub
  git add -A
  git commit -m 'v.'${VERSION}
  git push

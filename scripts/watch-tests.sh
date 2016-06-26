@@ -1,6 +1,8 @@
 #!/bin/sh
 
-set -ex pipefail
+set -e
+
+BIN='node_modules/.bin'
 
 # run all unit tests and watch files for changes
-$(npm bin)/mocha test/specs/**/*.ts -R spec --bail --watch
+$BIN/mocha test/specs/**/*.ts -R spec --bail --watch

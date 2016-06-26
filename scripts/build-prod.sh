@@ -19,8 +19,8 @@ fi
         --skipLibCheck \
         -p ${TSCONFIG}
 
-# validate all source files
-$BIN/tslint -c ./tslint.json src/**/*.ts src/**/*.tsx
+# validate all source and test files
+( exec "./scripts/lint.sh" )
 
 # transpile TypeScript down to ES5 and builds a bundle for production with Rollup
 $BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";

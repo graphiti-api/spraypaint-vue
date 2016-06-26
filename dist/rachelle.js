@@ -1,16 +1,16 @@
 /**
  * rachelle
- * @version 0.0.6
+ * @version 0.0.7
  * @copyright (c) 2016 KFlash
  * @license MIT <undefined/blob/master/LICENSE>
  */
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
-    (factory());
+    (global.Rachelle = factory());
 }(this, function () {
 
-    exports.default = {
+    var rachelle = {
         // 'a' should not be covered
         a: function () {
             var uncovered = true;
@@ -18,5 +18,7 @@
         },
         b: function () { return true; }
     };
+
+    return rachelle;
 
 }));
