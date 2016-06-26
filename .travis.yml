@@ -1,0 +1,54 @@
+#####
+# Travis CI
+#
+# After changing this file, check it on:
+# http://lint.travis-ci.org/
+
+language: node_js
+# Is `sudo` required? If not, jobs are run on container-based infrastructure.
+sudo: required
+dist: trusty
+node_js:
+  - "stable"
+  - "5"
+matrix:
+  fast_finish: true
+
+os:
+  - linux
+  - osx
+
+addons:
+#  firefox: "38.0"
+  apt:
+    sources:
+      # needed to install g++ that is used by npms's native modules
+      - ubuntu-toolchain-r-test
+      - google-chrome
+    packages:
+      - gcc-4.9
+      - g++-4.9
+      - gcc-4.9-multilib
+      - g++-4.9-multilib
+      - zip
+      - libgtk2.0-0
+      - g++
+      - google-chrome-stable
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - ./scripts/build.sh
+
+script:
+  - ./scripts/coverage.sh
+
+after_success:
+  - ./scripts/after.sh
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

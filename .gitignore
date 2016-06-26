@@ -1,0 +1,39 @@
+# compiled output
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# sublime
+*.sublime-project
+*.sublime-workspace
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+
+testem.log
+build
+*.ts.html
+.*.swp
+.*.un~
+*.iml
+.tmp
+.vscodeignore
+.env.deploy.*
+.DS_Store
+
+.idea
+.*.un~
+*.iml
+ehthumbs.db
+Icon?
+Thumbs.db
+coverage
+debug.log
+
+# Ignore npm debug log
+npm-debug.log

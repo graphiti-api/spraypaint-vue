@@ -1,0 +1,98 @@
+{
+  "name": "rachelle",
+  "version": "0.0.2",
+  "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
+  "main": "dist/rachelle.js",
+  "jsnext:main": "dist/rachelle.mjs",
+  "module": "dist/rachelle.mjs",
+  "author": "KFlash",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 5.4.1 < 6"
+  },
+  "cpu": [
+    "x64",
+    "ia32"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kflash/rachelle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kflash/rachelle/issues"
+  },
+  "keywords": [
+    "typescript",
+    "mocha",
+    "boilerplate",
+    "rollup",
+    "istanbul",
+    "coveralls",
+    "javascript",
+    "js",
+    "github",
+    "bundle",
+    "script",
+    "sourcemap",
+    "workflow",
+    "chai",
+    "sinon",
+    "next",
+    "es2015",
+    "transpilation"
+  ],
+  "files": [
+    "src/*",
+    "dist/*",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "sh ./scripts/prebuild.sh",
+    "build": "sh ./scripts/build.sh",
+    "build:dev": "sh ./scripts/build-dev.sh",
+    "build:prod": "sh ./scripts/build-prod.sh",
+    "coverage": "sh ./scripts/coverage.sh",
+    "cleanup": "sh ./scripts/cleanup.sh",
+    "test": "sh ./scripts/test.sh",
+    "lint": "sh ./scripts/lint.sh",
+    "watch:tests": "sh ./scripts/watch-tests.sh",
+    "update:dependencies": "sh ./scripts/update-dependencies.sh",
+    "watch:build": "sh ./scripts/watch-build.sh"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.22-alpha",
+    "@types/mocha": "^2.2.21-alpha",
+    "@types/sinon": "^1.16.20-alpha",
+    "@types/sinon-chai": "^2.7.20-alpha",
+    "chai": "^3.5.0",
+    "codecov": "^1.0.1",
+    "ignore-styles": "^4.0.0",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "npm-check-updates": "2.6.7",
+    "istanbul": "github:gotwarlost/istanbul#v1",
+    "rollup": "0.33.0",
+    "rollup-plugin-commonjs": "3.1.0",
+    "rollup-plugin-buble": "0.12.1",
+    "rollup-plugin-uglify": "1.0.1",
+    "rollup-plugin-replace": "1.1.1",
+    "rollup-plugin-strip": "1.1.1",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "tslint": "3.12.1",
+    "ts-node": "^0.9.3",
+    "typescript": "next"
+  },
+  "dependencies": {
+    "@types/node": "^4.0.22-alpha"
+  },
+  "npmName": "rachelle",
+  "npmFileMap": [
+    {
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
+    }
+  ]
+}
