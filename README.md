@@ -45,6 +45,6 @@ the `CI` and `NPM`.
 
 ## Coverage reports
 
-The coverage reports are generated with `Istanbul`, and delivered to `coveralls.io`.
+The coverage reports are generated with `Istanbul`, and delivered to `coveralls.io` and `codecov` by `Travis CI`.
 
 Istanbul generate a 100% correct coverage report. See the source and test files and do a comparison.
