@@ -29,6 +29,8 @@
 - `cleanup` - remove the dist, coverage and build folders
 - `test` - run all unit tests
 - `lint` - validates all source and test files
+- `lint-src` - validates all source files
+- `lint-tests` - validates all test files
 - `release` - build the library, push to NPM and Github
 - `watch:tests` - run all unit tests and watch files for changes
 - `watch:build` - watch your TypeScript files and trigger recompilation on changes
@@ -41,7 +43,7 @@ the `CI` and `NPM`.
 
 ## Continuous integration (CI)
 
-`Travis` and `Circle` are both supported. `Travis` is configured to work with `Linux` and `iOS`
+`Travis CI` and `Circle CI` are both supported. `Travis CI` is configured to test against both `Linux` and `iOS`
 
 ## Coverage reports
 

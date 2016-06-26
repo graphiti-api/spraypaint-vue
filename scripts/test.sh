@@ -3,8 +3,8 @@
 # if the tests fail, abort (errexit)
 set -e
 
-# validate all source and test files
-( exec "./scripts/lint.sh" )
+# validate all test files
+( exec "./scripts/lint-tests.sh" )
 
 # run Mocha tests on node.js
 echo "> running tests..."

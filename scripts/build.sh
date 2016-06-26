@@ -33,8 +33,8 @@ else
   mkdir -p ./dist
 fi
 
-# validate all source and test files
-( exec "./scripts/lint.sh" )
+# validate all source files
+( exec "./scripts/lint-src.sh" )
 
  # bundle a production and development bundle with Rollup
  $BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
