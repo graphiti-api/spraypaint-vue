@@ -66,6 +66,7 @@
     "@types/sinon": "^1.16.20-alpha",
     "@types/sinon-chai": "^2.7.20-alpha",
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
     "coveralls": "^2.11.9",
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.2.1",

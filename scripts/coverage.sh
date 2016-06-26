@@ -19,8 +19,12 @@ node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --repor
 
 # Check for Travis CI and Circle-CI environment
 if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
-  cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
-  # Upload to coveralls.io
-  # ./node_modules/.bin/codecov
+  # Push to coveralls.io
+  cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  ## Push to codecov
+  ./node_modules/.bin/codecov
+  # Remove the directory
+  rm -rf ./coverage
+   
  # - bash <(curl -s https://codecov.io/bash)
 fi
