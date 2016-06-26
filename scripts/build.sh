@@ -8,22 +8,22 @@ BIN=$PWD/node_modules/.bin
 # Travis stuff
 if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
-# Transpile TypeScript source code to ES6
-TSCONFIG=./tsconfig.json
-
- $BIN/tsc  \
-        --outDir ./build \
-        -t es6 \
-        --skipLibCheck \
-        -p ${TSCONFIG}
-
   # Install version of npm that we are locked against
   npm install -g npm@3
   # Disable the spinner, it looks bad on Travis
   npm config set spin false
   # Install all NPM packages
   npm install
-fi
+  
+  # Transpile TypeScript source code to ES6
+  TSCONFIG=./tsconfig.json
+
+  $BIN/tsc  \
+        --outDir ./build \
+        -t es6 \
+        --skipLibCheck \
+        -p ${TSCONFIG}
+ fi
 
 # make sure there is a dist folder
 if [ ! -d dist ]; then
