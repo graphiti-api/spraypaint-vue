@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "jsnext:main": "dist/rachelle.es.js",
@@ -79,7 +79,6 @@
     "rollup-plugin-buble": "0.12.1",
     "rollup-plugin-uglify": "1.0.1",
     "rollup-plugin-replace": "1.1.1",
-    "rollup-plugin-strip": "1.1.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "tslint": "3.12.1",

@@ -9,12 +9,11 @@ BIN=$PWD/node_modules/.bin
 if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
   # Install version of npm that we are locked against
-  npm install -g npm@3
+  npm i -g npm@3
   # Disable the spinner, it looks bad on Travis
   npm config set spin false
   # Install all NPM packages
-  npm install
-  
+  npm i
   # Transpile TypeScript source code to ES6
   TSCONFIG=./tsconfig.json
 
@@ -37,5 +36,5 @@ fi
 ( exec "./scripts/lint-src.sh" )
 
 # bundle a production and development bundle with Rollup
-$BIN/rollup --environment NODE_ENV:development -c "./config/rollup.dev.config.js";
-$BIN/rollup --environment NODE_ENV:production -c "./config/rollup.prod.config.js";
+$BIN/rollup --environment NODE_ENV:development -c "./rollup.config.js";
+$BIN/rollup --environment NODE_ENV:production -c "./rollup.config.js";

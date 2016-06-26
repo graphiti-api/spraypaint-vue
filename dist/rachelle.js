@@ -1,6 +1,6 @@
 /**
  * rachelle
- * @version 0.1.0
+ * @version 0.1.1
  * @copyright (c) 2016 KFlash
  * @license MIT <undefined/blob/master/LICENSE>
  */
@@ -8,7 +8,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
     (global.Rachelle = factory());
-}(this, function () {
+}(this, function () { 'use strict';
 
     var rachelle = {
         // 'a' should not be covered
