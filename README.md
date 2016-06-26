@@ -27,6 +27,7 @@
 - `cleanup` - remove the dist, coverage and build folders
 - `test` - run all unit tests
 - `lint` - validates all source and test files
+- `release` - build the library, push to NPM and Github
 - `watch:tests` - run all unit tests and watch files for changes
 - `watch:build` - watch your TypeScript files and trigger recompilation on changes
 - `update:dependencies` - update npm packages
