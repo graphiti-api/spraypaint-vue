@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -ex -o pipefail
+set -ex
 
 # Transpile TypeScript for the unit tests
 TSCONFIG=./tsconfig.json
@@ -19,7 +19,7 @@ node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --repor
 
 # Check for Travis CI and Circle-CI environment
 if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
-  cat coverage/lcov.info | node_modules/.bin/coveralls || echo "Coveralls upload failed"
+  cat coverage/lcov.info
   # Upload to coveralls.io
   ./node_modules/.bin/codecov && rm -rf ./coverage
 fi
