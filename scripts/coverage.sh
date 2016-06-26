@@ -22,4 +22,5 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] || [ $(env | grep CIRCLECI) ] ; then
   cat coverage/lcov.info || echo "Coveralls upload failed"
   # Upload to coveralls.io
   ./node_modules/.bin/codecov
+ - bash <(curl -s https://codecov.io/bash)
 fi
