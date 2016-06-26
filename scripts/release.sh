@@ -16,7 +16,7 @@ VERSION=$(cat package.json | grep "version" | sed 's/"version": "\(.*\)",/\1/' |
 
  # Add and push to Gitbub
  git add -A
- git commit -m '${VERSION} release'
+ git commit -m 'v.'${VERSION}
  git push
 
 echo '> release complete'
