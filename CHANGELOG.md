@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.3.2
+
+- fixed mocha configuration
+
 # 0.2.13
 
 - updated readme

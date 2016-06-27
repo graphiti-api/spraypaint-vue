@@ -22,4 +22,4 @@ echo "Gathering coverage report..." >&2
 
 # Generate the coverage report with Istanbul
 node --harmony ./node_modules/istanbul/lib/cli.js cover --root ${BUILD_DIR}/src --report lcov --report text \
-     ./node_modules/mocha/bin/_mocha -- -R spec --check-leaks ${BUILD_DIR}/test/**/*.js
+     ./node_modules/mocha/bin/_mocha ${BUILD_DIR}/test/**/*.js
