@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.3.5
+
+- fixed script issue
+
 # 0.3.3
 
 - fixed issue with the release script
