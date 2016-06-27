@@ -24,9 +24,9 @@
 
 ## Workflow
 
-- `build` - transpile TypeScript down to ES5 and builds a bundle both for development and production
-- `build:dev`  - transpile TypeScript down to ES5 and builds a bundle for development
-- `build:prod` - transpile TypeScript down to ES5 and builds a bundle for production
+- `build` - creates a development and production bundle
+- `build:dev`  - creates a development bundle
+- `build:prod` - creates a production bundle
 - `coverage` - shows the coverage report
 - `cleanup` - remove the dist, coverage and build folders
 - `test` - run all unit tests
