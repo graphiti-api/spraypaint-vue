@@ -5,5 +5,5 @@ set -e
 
 echo "> linting test files..."
 
-# validate all source and test files
+# validate all test files
 ./node_modules/.bin/tslint -c ./tslint.json test/specs/**/*.ts test/specs/**/*.tsx
