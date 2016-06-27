@@ -4,5 +4,6 @@
 --require test/setup/setup-dom.js
 --require ts-node/register 
 --check-leaks
+--watch-extensions tsx,ts
 --reporter spec
 --colors

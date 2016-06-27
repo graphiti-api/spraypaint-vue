@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.3.6
+
+- solved issue where Mocha watch task wasn't working
+
 # 0.3.5
 
 - fixed script issue
