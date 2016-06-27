@@ -54,9 +54,9 @@ Istanbul generate a 100% correct coverage report. See the source and test files 
 
 ## FAQ
 
-### Why doesn't the coverage report results reported by Coveralls.io and Codecov show the same results?
+### Why is there a difference in code coverage between Coveralls.io and Codecov?
 
-They actually do, but `Coveralls.io` seems to have an issue. Click on the `Coveralls` avatar and you will see the correct result. Or you can look at this readme on the NPM repo and it also show the correct results.
+Actually there is not any difference, but `Coveralls.io` seems to have an issue. Click on the `Coveralls` avatar and you will see the correct result. Or you can look at this readme on the NPM repo and it also show the correct results.
 
 ### How to use this boilerplate with Karma?
 
