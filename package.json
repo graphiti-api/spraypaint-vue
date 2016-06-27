@@ -3,7 +3,6 @@
   "version": "0.1.3",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
-  "jsnext:main": "dist/rachelle.es.js",
   "author": "KFlash",
   "license": "MIT",
   "engines": {
