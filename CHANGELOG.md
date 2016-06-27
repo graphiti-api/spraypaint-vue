@@ -1,5 +1,11 @@
 ## Changelog
 
+# v.0.2.0
+
+- refactored Rollup bundling
+- cleanup
+- updated NPM packages
+
 # v.0.1.7
 
 - added prepublish script

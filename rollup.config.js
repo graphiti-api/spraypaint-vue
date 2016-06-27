@@ -17,27 +17,16 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
 export default {
   entry: `build/src/${pkg.name}.js`,
   plugins: [
-      isProduction ? uglify({}) : {
-        warnings: false,
-				compress: {
-					screw_ie8: true,
-					dead_code: true,
-					unused: true,
-					drop_debugger: true
-				}
-      },
+      isProduction ? uglify({}) : {},
       buble(),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
       commonjs({ include: 'node_modules/**' })
   ],
   banner:  banner,
+  sourceMap: false,
   moduleName: pkg.name,
-  targets: [
-    {
-      dest: `dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`,
-      format: 'umd',
-      sourceMap: false
-    }
+  targets: [ 
+    {  dest: `dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`, format: 'umd' }
   ]
 };
 
