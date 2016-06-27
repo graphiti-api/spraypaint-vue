@@ -1,5 +1,9 @@
 ## Changelog
 
+# v.0.2.1
+
+- Simplified CI support
+
 # v.0.2.0
 
 - refactored Rollup bundling

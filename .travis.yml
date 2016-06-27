@@ -1,8 +1,6 @@
 #####
 # Travis CI
-#
-# After changing this file, check it on:
-# http://lint.travis-ci.org/
+######
 
 language: node_js
 # Is `sudo` required? If not, jobs are run on container-based infrastructure.

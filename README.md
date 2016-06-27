@@ -44,7 +44,7 @@ the `CI` and `NPM`.
 
 ## Continuous integration (CI)
 
-`Travis CI` and `Circle CI` are both supported. `Travis CI` is configured to test against both `Linux` and `iOS`
+Both `Travis CI` and `Circle CI` are supported.
 
 ## Coverage reports
 
