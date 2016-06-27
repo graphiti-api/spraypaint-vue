@@ -3,7 +3,7 @@
 # if the tests fail, abort (errexit)
 set -e
 
-BIN=/node_modules/.bin
+BIN=./node_modules/.bin
 
 # transpile the TypeScript source code to ES6
  TSCONFIG=./tsconfig.json
