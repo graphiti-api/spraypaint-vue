@@ -9,7 +9,7 @@ BIN=$PWD/node_modules/.bin
 if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
 # coarse Node version check
- if [[ `node --version` < 5.4.1 ]]; then
+ if [[ `node --version` < '5.4.1' ]]; then
   echo "**************************************************************"
   echo "* Your build have ben stopped because of a unsupported Node  *"
   echo "* version. Currently Node 5 or newer is required.            *"
