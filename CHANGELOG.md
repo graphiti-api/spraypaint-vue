@@ -1,5 +1,9 @@
 ## Changelog
 
+# v.0.2.2
+
+- updated readme
+
 # v.0.2.1
 
 - Simplified CI support

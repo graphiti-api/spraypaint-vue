@@ -51,3 +51,10 @@ Both `Travis CI` and `Circle CI` are supported.
 The coverage reports are generated with `Istanbul`, and delivered to `coveralls.io` and `codecov` by `Travis CI`.
 
 Istanbul generate a 100% correct coverage report. See the source and test files and do a comparison.
+
+## FAQ
+
+### How to use this boilerplate with Karma?
+
+NPM install the Karma package and type `karma init` on the command line. The test files are pre-transpilled by TypeScript and located here `build/test/specs/**/*.js`.
+Install a Karma preprocessor, and the NPM packages you may need.
