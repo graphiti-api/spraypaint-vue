@@ -36,10 +36,8 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
         -p ${TSCONFIG}
  fi
 
-# make sure there is a dist folder
-if [ ! -d dist ]; then
-    mkdir -p ./dist
-else
+# delete all files if there is a dist folder
+if [ -d dist ]; then
   rm -rf ./dist
   mkdir -p ./dist
 fi
