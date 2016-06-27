@@ -7,7 +7,10 @@
 [![npm version](https://badge.fury.io/js/rachelle.svg)](https://badge.fury.io/js/rachelle)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/rachelle/blob/master/LICENSE.md)
 
-> Fast, and lightweight TypeScript 2.0 boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.
+This package contains a compact and lightweight `TypeScript 2.0` boilerplate that export a single file. `Mocha-Chai-Sinon` are used as the testing
+stack, and `TSLint` are used to keep an consistent code style.
+
+Estimated bundle time: `0.3 ms`. (*Depends on your computer.*) 
 
 ## Features
 
@@ -22,7 +25,7 @@
 - [x] Environment variabels
 - [x] Easy debugging
 
-## Workflow
+## npm Scripts
 
 - `build` - creates a development and production bundle
 - `build:dev`  - creates a development bundle

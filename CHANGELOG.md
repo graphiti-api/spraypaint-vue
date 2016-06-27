@@ -1,5 +1,9 @@
 ## Changelog
 
+# v.0.2.13
+
+- updated readme
+
 # v. 0.2.11
 
 - rolled back Node.js check in Travis.
