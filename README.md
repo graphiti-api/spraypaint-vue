@@ -8,7 +8,6 @@
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/rachelle/blob/master/LICENSE.md)
 
 This package contains a compact and lightweight `TypeScript 2.0` boilerplate that export a single file. 
-`Mocha-Chai-Sinon` are used as the testing stack, and `TSLint` are used to keep an consistent code style.
 
 Estimated bundle time: `0.3 ms`. (*Depends on your computer.*) 
 
