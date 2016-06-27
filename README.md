@@ -12,7 +12,6 @@
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
-- [x] All new TypeScript 2.0 features supported
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
 - [x] [Rollup](http://rollupjs.org/) for bundling
