@@ -5,20 +5,20 @@ set -e
 
 BIN=$PWD/node_modules/.bin
 
- # coarse Node version check
+ # Travis stuff
+if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
+
+# coarse Node version check
  if [[ `node --version` < 5.4.1 ]]; then
-  echo "********************************************************************"
-  echo "* Your build have ben stopped because your environment doesn't run *"
-  echo "* on Node.js v.5.4.1 or newer.                                    *"
-  echo "*                                                                  *"
-  echo "* Please fix the issue and then rerun this command.                *"
-  echo "********************************************************************"
+  echo "**************************************************************"
+  echo "* Your build have ben stopped because of a unsupported Node  *"
+  echo "* version. Currently Node 5 or newer is required.            *"
+  echo "*                                                            *"
+  echo "* Please fix the issue and then rerun this command.          *"
+  echo "**************************************************************"
 
   exit 1
  fi
-
-# Travis stuff
-if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
   # Install version of npm that we are locked against
   npm i -g npm@3
