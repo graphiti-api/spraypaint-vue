@@ -54,11 +54,11 @@ Istanbul generate a 100% correct coverage report. See the source and test files 
 
 ## FAQ
 
-### Why is there a difference in code coverage between Coveralls.io and Codecov?
+#### Why is there a difference in code coverage between Coveralls.io and Codecov?
 
 Actually there is not any difference, but `Coveralls.io` seems to have an issue. Click on the `Coveralls` avatar and you will see the correct result. Or you can look at this readme on the NPM repo and it also show the correct results.
 
-### How to use this boilerplate with Karma?
+#### How to use this boilerplate with Karma?
 
 NPM install the Karma package and type `karma init` on the command line. The test files are pre-transpilled by TypeScript and located here `build/test/specs/**/*.js`.
 Install a Karma preprocessor, and the NPM packages you may need.
