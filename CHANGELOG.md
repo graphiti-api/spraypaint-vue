@@ -1,5 +1,10 @@
 ## Changelog
 
+# v. 0.2.4
+
+- put a blocker for node.js version older then 5.x. The script will stop.
+- moved coverage report commands to the after.sh file.
+
 # v. 0.2.3
 
 - updated readme
