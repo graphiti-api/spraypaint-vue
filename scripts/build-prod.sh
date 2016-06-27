@@ -5,11 +5,6 @@ set -e
 
 BIN=$PWD/node_modules/.bin
 
-# create dist/ folder if does not exist
-if [ ! -d dist ]; then
-    mkdir -p ./dist
-fi
-
 # transpile the TypeScript source code to ES6
  TSCONFIG=./tsconfig.json
 

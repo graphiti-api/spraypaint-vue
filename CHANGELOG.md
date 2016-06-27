@@ -1,5 +1,10 @@
 ## Changelog
 
+# v. 0.2.7
+
+- only delete dist folder on build.
+- improved perf
+
 # v. 0.2.4
 
 - put a blocker for node.js version older then 5.x. The script will stop.

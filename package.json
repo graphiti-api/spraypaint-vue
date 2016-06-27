@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
