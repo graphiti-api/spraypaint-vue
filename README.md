@@ -40,6 +40,9 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `watch:build` - watch your TypeScript files and trigger recompilation on changes
 - `update:dependencies` - update npm packages
 
+## Usage
+You can simply use this project as a drop-in replacement for any TypeScript projects if you need something fast, and lightweight. Just replace the `./src` and `./test` folder and it should work right out of the box.
+
 ## Shell commands
 
 All commands can be run with `sh`. The script files are located inside the `./scripts` folder, and shared between
