@@ -32,7 +32,9 @@ if [ -d ${DIST_DIR} ]; then
 fi
 
 # validate all source files
-( exec "./scripts/lint-src.sh" )
+"./scripts/lint-src.sh"
+
+echo "> bundling..."
 
 # bundle a production and development bundle with Rollup
 $BIN/rollup --environment NODE_ENV:development -c

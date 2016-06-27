@@ -4,7 +4,7 @@
 set -e
 
 # Build library
-( exec "./scripts/build.sh" )
+./scripts/build.sh
 
 # Publish to NPM
 echo '> publishing to npm...'
