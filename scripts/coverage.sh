@@ -4,16 +4,19 @@ set -e
 
 BUILD_DIR=./build
 
+(
+
 # Transpile TypeScript for the unit tests
 TSCONFIG=./tsconfig.json
 
- $(npm bin)/tsc \
+ ./node_modules/.bin/tsc \
         --sourceMap \
         --outDir ${BUILD_DIR} \
         --skipLibCheck \
         -t es6 \
         -m none \
         -p ${TSCONFIG}
+)
 
 echo "Gathering coverage report..." >&2
 

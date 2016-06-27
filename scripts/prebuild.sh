@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# run in subshell to avoid polluting cwd
 (
 
 set -e

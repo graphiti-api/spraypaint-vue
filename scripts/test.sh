@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# run in subshell to avoid polluting cwd
 (
 # if the tests fail, abort (errexit)
 set -e

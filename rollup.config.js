@@ -18,9 +18,9 @@ export default {
   entry: `build/src/${pkg.name}.js`,
   plugins: [
       isProduction ? uglify({}) : {},
-      buble(),
-		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
-      commonjs({ include: 'node_modules/**' })
+      commonjs({ include: 'node_modules/**' }),
+      buble({exclude: 'node_modules/**'}),
+		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) })
   ],
   banner:  banner,
   sourceMap: false,

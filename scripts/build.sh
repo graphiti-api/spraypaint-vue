@@ -24,11 +24,11 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
         -p ${TSCONFIG}
  fi
 
-DEST_DIR=./dist
+DIST_DIR=./dist
 
 # delete all files if there is a dist folder
-if [ -d ${DEST_DIR} ]; then
-  rm -rf ${DEST_DIR}
+if [ -d ${DIST_DIR} ]; then
+  rm -rf ${DIST_DIR}
 fi
 
 # validate all source files
