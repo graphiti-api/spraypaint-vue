@@ -12,13 +12,15 @@
 ## Features
 
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
-- [x] Allow dead code elimination
-- [x] TSLint for code validation
-- [x] Easy debugging
+- [x] All new TypeScript 2.0 features supported
+- [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
+- [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Sinon](http://sinonjs.org/) for test doubles
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
+- [x] Environment variabels
+- [x] Easy debugging
 
 ## Workflow
 

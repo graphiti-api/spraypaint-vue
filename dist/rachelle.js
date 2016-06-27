@@ -1,13 +1,13 @@
 /**
  * rachelle
- * @version 0.1.1
+ * @version 0.1.3
  * @copyright (c) 2016 KFlash
  * @license MIT <undefined/blob/master/LICENSE>
  */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
-    (global.Rachelle = factory());
+    (global.rachelle = factory());
 }(this, function () { 'use strict';
 
     var rachelle = {

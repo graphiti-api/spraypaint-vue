@@ -1,5 +1,9 @@
 ## Changelog
 
+# v.0.1.2
+
+- fixed so the library name are taken from package.json
+
 # v.0.1.1
 
 - simplified Rollup configuration

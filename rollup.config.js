@@ -7,7 +7,7 @@ const pkg = require('./package.json');
 const isProduction = process.env.NODE_ENV === 'production';
 
 export default {
-  entry: resolve('build/src/rachelle.js'),
+  entry: resolve(`build/src/${pkg.name}.js`),
    banner: 
 	'/**\n' +
 	' * ' + pkg.name + '\n' +
@@ -31,9 +31,9 @@ export default {
   ],
   targets: [
     {
-      dest: resolve(`dist/rachelle.${isProduction ? 'min.js' : 'js'}`),
+      dest: resolve(`dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`),
       format: 'umd',
-      moduleName: 'Rachelle',
+      moduleName: pkg.name,
       sourceMap: false
     }
   ]
