@@ -60,5 +60,17 @@ Actually there is no difference, but `Coveralls.io` seems to have an issue. Clic
 
 #### How to use this boilerplate with Karma?
 
-NPM install the Karma package and type `karma init` on the command line. The test files are pre-transpilled by TypeScript and located here `build/test/specs/**/*.js`.
-Install a Karma preprocessor, and the NPM packages you may need.
+NPM install the `Karma` package and type `karma init` on the command line. The test files are pre-transpilled by `TypeScript` and located here `build/test/specs/**/*.js`.
+Install a `Karma` preprocessor, and the NPM packages you may need.
+
+#### When should I consider using this boilerplate?
+
+This library is ideal for libraries that export a single file.
+
+#### What's the browser compatibility?
+
+As a rule of thumb, `TypeScript` works best in `IE9` and above.
+
+#### Do I need to customize this boilerplate?
+
+Nope. You only have to change the name on the boilerplate in the `package.json`.  
