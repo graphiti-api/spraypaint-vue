@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -8,10 +8,6 @@
   "engines": {
     "node": ">= 5.4.1 < 6"
   },
-  "cpu": [
-    "x64",
-    "ia32"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kflash/rachelle.git"
@@ -59,9 +55,10 @@
     "lint:tests": "sh ./scripts/lint-tests.sh",
     "lint:src": "sh ./scripts/lint-src.sh",
     "release": "sh ./scripts/release.sh",
-    "watch:tests": "sh ./scripts/watch-tests.sh",
     "update:dependencies": "sh ./scripts/update-dependencies.sh",
-    "watch:build": "sh ./scripts/watch-build.sh"
+    "watch:tests": "sh ./scripts/watch-tests.sh",
+    "watch:build": "sh ./scripts/watch-build.sh",
+     "watch:rollup": "sh ./scripts/watch-rollup.sh"
   },
   "devDependencies": {
     "@types/chai": "^3.4.22-alpha",

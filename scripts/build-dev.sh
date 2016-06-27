@@ -24,4 +24,4 @@ fi
 ( exec "./scripts/lint-src.sh" )
 
 # transpile TypeScript down to ES5 and builds a bundle for development with Rollup
-$BIN/rollup --environment NODE_ENV:development -c "./rollup.config.js";
+$BIN/rollup --environment NODE_ENV:development -c
