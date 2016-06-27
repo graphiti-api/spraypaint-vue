@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -58,7 +58,7 @@
     "update:dependencies": "sh ./scripts/update-dependencies.sh",
     "watch:tests": "sh ./scripts/watch-tests.sh",
     "watch:build": "sh ./scripts/watch-build.sh",
-     "watch:rollup": "sh ./scripts/watch-rollup.sh"
+    "prepublish": "sh ./scripts/prepublish.sh"
   },
   "devDependencies": {
     "@types/chai": "^3.4.22-alpha",
