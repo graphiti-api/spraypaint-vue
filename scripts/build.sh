@@ -5,8 +5,7 @@ set -e
 
 BIN=$PWD/node_modules/.bin
 
-# Only allow Node.js v.5.4.1 or newer
-
+ # coarse Node version check
  if [[ `node --version` < 5.4.1 ]]; then
   echo "********************************************************************"
   echo "* Your build have ben stopped because your environment doesn't run *"
@@ -16,7 +15,6 @@ BIN=$PWD/node_modules/.bin
   echo "********************************************************************"
 
   exit 1
-
  fi
 
 # Travis stuff
