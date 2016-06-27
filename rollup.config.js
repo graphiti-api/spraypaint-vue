@@ -1,22 +1,22 @@
-import { resolve } from 'path';
+import { readFileSync } from 'fs';
 import buble from 'rollup-plugin-buble';
 import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
-const pkg = require('./package.json');
+
+const pkg = JSON.parse( readFileSync( 'package.json', 'utf-8' ) );
+
 const isProduction = process.env.NODE_ENV === 'production';
 
+const banner = readFileSync( 'banner.js', 'utf-8' )
+	.replace( '${name}', pkg.name )
+  .replace( '${version}', pkg.version )
+  .replace( '${author}', pkg.author )
+  .replace( '${homepage}', pkg.homepage )
+
 export default {
-  entry: resolve(`build/src/${pkg.name}.js`),
-   banner: 
-	'/**\n' +
-	' * ' + pkg.name + '\n' +
-	' * @version ' + pkg.version + '\n' +
-	' * @copyright (c) 2016 ' + pkg.author + '\n' +
-	' * @license MIT <'+ pkg.homepage + '/blob/master/LICENSE>\n' +
-	' */',
+  entry: `build/src/${pkg.name}.js`,
   plugins: [
-		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
       isProduction ? uglify({}) : {
         warnings: false,
 				compress: {
@@ -27,13 +27,15 @@ export default {
 				}
       },
       buble(),
+		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
       commonjs({ include: 'node_modules/**' })
   ],
+  banner:  banner,
+  moduleName: pkg.name,
   targets: [
     {
-      dest: resolve(`dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`),
+      dest: `dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`,
       format: 'umd',
-      moduleName: pkg.name,
       sourceMap: false
     }
   ]

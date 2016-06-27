@@ -1,5 +1,9 @@
 ## Changelog
 
+# v.0.1.5
+
+- simplified Rollup bundling
+
 # v.0.1.4
 
 - added Sinon support with examples
