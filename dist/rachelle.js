@@ -1,6 +1,6 @@
 /*
 * rachelle.js
-* @version 0.2.10
+* @version 0.2.11
 * @copyright (c) 2016 - KFlash
 * @license MIT <undefined/blob/master/LICENSE>
 */

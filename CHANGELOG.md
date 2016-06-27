@@ -1,5 +1,10 @@
 ## Changelog
 
+# v. 0.2.11
+
+- rolled back Node.js check in Travis.
+- improved command scripts
+
 # v. 0.2.8
 
 - unit testing now support both`.ts` and `.tsx` files

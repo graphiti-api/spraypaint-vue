@@ -2,12 +2,14 @@
 
 set -e
 
+BUILD_DIR=./build
+
 # Transpile TypeScript for the unit tests
 TSCONFIG=./tsconfig.json
 
  $(npm bin)/tsc \
         --sourceMap \
-        --outDir ./build \
+        --outDir ${BUILD_DIR} \
         --skipLibCheck \
         -t es6 \
         -m none \
@@ -16,5 +18,5 @@ TSCONFIG=./tsconfig.json
 echo "Gathering coverage report..." >&2
 
 # Generate the coverage report with Istanbul
-node --harmony ./node_modules/istanbul/lib/cli.js cover --root build/src --report lcov --report text \
-     ./node_modules/mocha/bin/_mocha -- -R spec --check-leaks ./build/test/**/*.js
+node --harmony ./node_modules/istanbul/lib/cli.js cover --root ${BUILD_DIR}/src --report lcov --report text \
+     ./node_modules/mocha/bin/_mocha -- -R spec --check-leaks ${BUILD_DIR}/test/**/*.js
