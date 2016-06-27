@@ -18,6 +18,7 @@
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Sinon](http://sinonjs.org/) for test doubles
 - [x] [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/) de facto standard
+- [x] JSX
 - [x] Environment variabels
 - [x] Easy debugging
 
@@ -62,6 +63,10 @@ Actually there is no difference, but `Coveralls.io` seems to have an issue. Clic
 
 NPM install the `Karma` package and type `karma init` on the command line. The test files are pre-transpilled by `TypeScript` and located here `build/test/specs/**/*.js`.
 Install a `Karma` preprocessor, and the NPM packages you may need.
+
+#### Is JSX supported?
+
+Yes. Both `TSX` and `JSX`. By default `Bublé` are configured to be used with `React`. You may change this inside the `rollup.config.js` file.
 
 #### When should I consider using this boilerplate?
 

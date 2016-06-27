@@ -1,5 +1,9 @@
 ## Changelog
 
+# v. 0.2.8
+
+- unit testing now support both`.ts` and `.tsx` files
+
 # v. 0.2.7
 
 - only delete dist folder on build.

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # if the tests fail, abort (errexit)
 set -e
@@ -8,6 +8,6 @@ set -e
 
 # run Mocha tests on node.js
 echo "> running tests..."
-./node_modules/.bin/mocha test/specs/**/*.ts -R spec --bail
+./node_modules/.bin/mocha test/specs/**/*.ts* -R spec --bail
 
 

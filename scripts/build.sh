@@ -5,7 +5,7 @@ set -e
 
 BIN=$PWD/node_modules/.bin
 
- # Travis stuff
+# Travis stuff
 if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
 # coarse Node version check
@@ -36,10 +36,11 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
         -p ${TSCONFIG}
  fi
 
+DEST_DIR=./dist
+
 # delete all files if there is a dist folder
-if [ -d dist ]; then
-  rm -rf ./dist
-  mkdir -p ./dist
+if [ -d ${DEST_DIR} ]; then
+  rm -rf ${DEST_DIR}
 fi
 
 # validate all source files
