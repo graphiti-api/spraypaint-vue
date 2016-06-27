@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.3.3
+
+- fixed issue with the release script
+
 # 0.3.2
 
 - fixed mocha configuration
