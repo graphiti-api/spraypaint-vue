@@ -1,9 +1,12 @@
---recursive
---require ignore-styles
 --require test/setup/setup-mocha.js
 --require test/setup/setup-dom.js
+--require ignore-styles
 --require ts-node/register 
+--recursive
 --check-leaks
 --watch-extensions tsx,ts
 --reporter spec
+--ui bdd
 --colors
+--timeout 15000
+--bail

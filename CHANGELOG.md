@@ -1,5 +1,12 @@
 ## Changelog
 
+# 0.4.0
+
+- improved JSDom configuration
+- tests can now be in sub-directories
+- jsx / tsx supported in tests
+- improved `∼./test/mocha.opts` configuration
+
 # 0.3.6
 
 - solved issue where Mocha watch task wasn't working

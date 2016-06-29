@@ -15,7 +15,7 @@
 		"sourceMap": false,
 		"inlineSourceMap": false,
 		"suppressImplicitAnyIndexErrors": false,
-		"types": ["mocha", "chai", "sinon"]
+		"types": ["mocha", "chai", "sinon", "expect"]
 },
 	"filesGlob": [
 	"src/**/*.ts",
