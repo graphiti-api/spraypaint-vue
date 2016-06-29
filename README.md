@@ -75,7 +75,7 @@ Yes. Both `TSX` and `JSX`. By default `Bublé` are configured to be used with `R
 #### Why is everything so strict?
 
 What do you mean? The `TypeScript` compiler have it's rules to follow, as well as `TSLint`. Everytime you bundle, run a watch task or
-run the unit tests, things get validated. You can't run bundle or run unit tests if there are errors in your code. 
+run the unit tests, things get validated. You can't compile the source code or run unit tests if there are errors in your code. 
 
 #### When should I consider using this boilerplate?
 
