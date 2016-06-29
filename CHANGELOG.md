@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.4.2
+
+- JSDOM is now optional. Standard tests are running without JSDOM. `npm run test:jsd` runs the tests with `JSDom` 
+
 # 0.4.0
 
 - improved JSDom configuration

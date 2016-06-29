@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -51,6 +51,7 @@
     "coverage": "sh ./scripts/coverage.sh",
     "cleanup": "sh ./scripts/cleanup.sh",
     "test": "sh ./scripts/test.sh",
+    "test:jsd": "sh ./scripts/test-jsd.sh",
     "lint": "sh ./scripts/lint.sh",
     "lint:tests": "sh ./scripts/lint-tests.sh",
     "lint:src": "sh ./scripts/lint-src.sh",

@@ -16,6 +16,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
+- [x] Optional [JSDOM](https://github.com/tmpvar/jsdom) 
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Sinon](http://sinonjs.org/) for test doubles
@@ -31,7 +32,8 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `build:prod` - creates a production bundle
 - `coverage` - shows the coverage report
 - `cleanup` - remove the dist, coverage and build folders
-- `test` - run all unit tests
+- `test` - run all unit tests in the node.js environment
+- `test:jsd` - run all unit tests in the node.js environment with JSDom
 - `lint` - validates all source and test files
 - `lint-src` - validates all source files
 - `lint-tests` - validates all test files
