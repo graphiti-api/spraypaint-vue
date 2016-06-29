@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.4.3
+
+- Enabled dead code elimination when transpiling with TypeScript
+
 # 0.4.2
 
 - JSDOM is now optional. Standard tests are running without JSDOM. `npm run test:jsd` runs the tests with `JSDom` 

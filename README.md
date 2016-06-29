@@ -16,6 +16,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Statically typed build system for working with [Typescript](https://www.typescriptlang.org/) 2.0 Pre
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
+- [x] Dead code elimination
 - [x] Optional [JSDOM](https://github.com/tmpvar/jsdom) 
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
@@ -75,9 +76,14 @@ Install a `Karma` preprocessor, and the NPM packages you may need.
 
 Yes. Both `TSX` and `JSX`. By default `Bublé` are configured to be used with `React`. You may change this inside the `rollup.config.js` file.
 
+#### Why is everything so strict?
+
+What do you mean? The `TypeScript` compiler have it's rules to follow, as well as `TSLint`. Everytime you bundle, run a watch task or
+run the unit tests, things get validated. You can't run bundle or run unit tests if there are errors in your code. 
+
 #### When should I consider using this boilerplate?
 
-This library is ideal for libraries that export a single file.
+You may consider this is if you need a lightweight, fast boilerplate that export a single file.
 
 #### What's the browser compatibility?
 

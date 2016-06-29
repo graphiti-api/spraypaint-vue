@@ -11,17 +11,14 @@ fi
 
 ./node_modules/.bin/tsc --version
 
-# Transpiling all TypeScript files in project
-# If we allow dead code elimination with TypeScript, we will end up with a nasty looking bundle
-# and extra bytes.
-# Rollup will use tree-shaking and fix this for us
-
+# Transpil all TypeScript files in the project
 TSCONFIG=./tsconfig.json
 
 echo "> compiling..."
  ./node_modules/.bin/tsc  \
         --outDir ./build \
-        -t es6 \
+        -t es5 \
+        -m es6 \
         --skipLibCheck \
         -p ${TSCONFIG}
 )

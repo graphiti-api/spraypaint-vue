@@ -19,7 +19,8 @@ if [ $(env | grep TRAVIS_JOB_ID ) ] ; then
 
   $BIN/tsc  \
         --outDir ./build \
-        -t es6 \
+        -t es5 \
+        -m es6 \
         --skipLibCheck \
         -p ${TSCONFIG}
  fi
