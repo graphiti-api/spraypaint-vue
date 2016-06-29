@@ -1,32 +1,32 @@
 {
-	"compilerOptions": {
-		"allowJs": false,
-		"allowUnreachableCode": false,
-		"declaration": false,
-		"experimentalDecorators": true,
-		"jsx": "preserve",
-		"moduleResolution": "node",
-		"noEmitHelpers": true,
-		"newLine": "LF",
-		"noImplicitAny": true,
-		"noLib": false,
-		"removeComments": false,
-		"strictNullChecks": true,
-		"sourceMap": false,
-		"inlineSourceMap": false,
-		"suppressImplicitAnyIndexErrors": false,
-		"types": ["mocha", "chai", "sinon", "expect"]
+    "compilerOptions": {
+    "allowJs": false,
+        "allowUnreachableCode": false,
+        "declaration": false,
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "noEmitHelpers": true,
+        "newLine": "LF",
+        "noImplicitAny": true,
+        "noLib": false,
+        "removeComments": false,
+        "strictNullChecks": true,
+        "sourceMap": false,
+        "inlineSourceMap": false,
+        "suppressImplicitAnyIndexErrors": false,
+        "types": ["mocha", "chai", "sinon"]
 },
-	"filesGlob": [
-	"src/**/*.ts",
-	"src/**/*.tsx",
-	"!./node_modules/**"
+    "filesGlob": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "!./node_modules/**"
 ],
-"exclude": [
-  "scripts",
-  "build",
-  "node_modules"
+    "exclude": [
+    "scripts",
+    "build",
+    "node_modules"
 ],
-	"compileOnSave": false,
-	"buildOnSave": false
+    "compileOnSave": false,
+    "buildOnSave": false
 }
