@@ -33,7 +33,7 @@
     "chai",
     "sinon",
     "es2015",
-    "transpilation",  
+    "transpilation",
     "mocha",
     "chai",
     "boilerplate"
@@ -71,7 +71,7 @@
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.3.0",
     "mocha": "^2.5.3",
-    "npm-check-updates": "2.6.7",
+    "npm-check-updates": "2.6.8",
     "istanbul": "github:gotwarlost/istanbul#v1",
     "rollup": "0.33.0",
     "rollup-plugin-commonjs": "3.1.0",
