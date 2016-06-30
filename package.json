@@ -33,7 +33,7 @@
     "chai",
     "sinon",
     "es2015",
-    "transpilation",  
+    "transpilation",
     "mocha",
     "chai",
     "boilerplate"
