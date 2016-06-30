@@ -48,7 +48,7 @@ You can simply use this project as a drop-in replacement for any TypeScript proj
 
 ## Windows users
 
-For `Windows users` shell scripts isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
+For `Windows users` shell script isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
 
 ## Shell commands
 
