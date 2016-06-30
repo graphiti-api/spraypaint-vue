@@ -51,7 +51,7 @@ You can simply use this project as a drop-in replacement for any TypeScript proj
 All commands can be run with `sh`. The script files are located inside the `./scripts` folder, and shared between
 the `CI` and `NPM`.
 
-For Windows shell scripts isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
+For `Windows users` shell scripts isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
 
 
 ## Continuous integration (CI)
