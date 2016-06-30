@@ -46,13 +46,14 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 ## Usage
 You can simply use this project as a drop-in replacement for any TypeScript projects if you need something fast, and lightweight. Just replace the `./src` and `./test` folder and it should work right out of the box.
 
+## Windows users
+
+For `Windows users` shell scripts isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
+
 ## Shell commands
 
 All commands can be run with `sh`. The script files are located inside the `./scripts` folder, and shared between
 the `CI` and `NPM`.
-
-For `Windows users` shell scripts isn't working by default. One workaround is to use Github's own app. Click on **Options** inside the app, and activate **PowerShell** as your **Default shell** on the right side of the options..
-
 
 ## Continuous integration (CI)
 
