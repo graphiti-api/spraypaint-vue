@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.4.4
+
+- changed a few TSLint rules
+- update NPM packages
+
 # 0.4.3
 
 - Enabled dead code elimination when transpiling with TypeScript

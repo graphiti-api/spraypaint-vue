@@ -1,6 +1,6 @@
 {
   "name": "rachelle",
-  "version": "0.4.3",
+  "version": "0.4.5",
   "description": "Fast, and lightweight TypeScript boilerplate that export a single file. Tests in Mocha, Chai & Sinon. TSLint for better code quality.",
   "main": "dist/rachelle.js",
   "author": "KFlash",
@@ -71,7 +71,7 @@
     "ignore-styles": "^4.0.0",
     "jsdom": "^9.3.0",
     "mocha": "^2.5.3",
-    "npm-check-updates": "2.6.7",
+    "npm-check-updates": "2.6.8",
     "istanbul": "github:gotwarlost/istanbul#v1",
     "rollup": "0.33.0",
     "rollup-plugin-commonjs": "3.1.0",
