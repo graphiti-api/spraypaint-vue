@@ -7,9 +7,9 @@
 [![npm version](https://badge.fury.io/js/rachelle.svg)](https://badge.fury.io/js/rachelle)
 [![npm](https://img.shields.io/npm/l/express.svg?style=flat-square)](https://github.com/kflash/rachelle/blob/master/LICENSE.md)
 
-This package contains a compact and lightweight `TypeScript 2.0` boilerplate that export a single file. 
+This package contains a compact and lightweight `TypeScript 2.0` boilerplate that export a single file.
 
-Estimated bundle time: `0.3 ms`. (*Depends on your computer.*) 
+Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 
 ## Features
 
@@ -18,7 +18,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
 - [x] Dead code elimination
 - [x] VSCode integration
-- [x] Optional [JSDOM](https://github.com/tmpvar/jsdom) 
+- [x] Optional [JSDOM](https://github.com/tmpvar/jsdom)
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler
 - [x] [Sinon](http://sinonjs.org/) for test doubles
@@ -35,7 +35,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `coverage` - shows the coverage report
 - `clean` - remove the dist, coverage and build folders
 - `test` - run all unit tests in the node.js environment
-- `test:jsd` - run all unit tests in the node.js environment with JSDom
+- `test:jsdom` - run all unit tests in the node.js environment with jsdom
 - `lint` - validates all source and test files
 - `lint-src` - validates all source files
 - `lint-tests` - validates all test files
@@ -69,7 +69,7 @@ Yes. Both `TSX` and `JSX`. By default `Bublé` are configured to be used with `R
 #### Why is everything so strict?
 
 What do you mean? The `TypeScript` compiler have it's rules to follow, as well as `TSLint`. Everytime you bundle, run a watch task or
-run the unit tests, things get validated. You can't compile the source code or run unit tests if there are errors in your code. 
+run the unit tests, things get validated. You can't compile the source code or run unit tests if there are errors in your code.
 
 #### When should I consider using this boilerplate?
 
@@ -81,4 +81,4 @@ As a rule of thumb, `TypeScript` works best in `IE9` and above.
 
 #### Do I need to customize this boilerplate?
 
-Nope. You only have to change the name on the boilerplate in the `package.json`.  
+Nope. You only have to change the name on the boilerplate in the `package.json`.

@@ -1,5 +1,11 @@
 ## Changelog
 
+# 0.5.3
+
+- fixed issue with debug mode in VSCode
+- run linting in parallel
+- simplified
+
 # 0.5.2
 
 - added settings for the VSCode editor.
