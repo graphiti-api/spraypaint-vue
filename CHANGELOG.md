@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.5.2
+
+- added settings for the VSCode editor.
+- Moved --outDir to tsconfig.json, and removed from package.json
+
 # 0.5.1
 
 - changed how environment variabels work. Don't trust Rollup on that one!
@@ -25,7 +30,7 @@
 
 # 0.4.2
 
-- JSDOM is now optional. Standard tests are running without JSDOM. `npm run test:jsd` runs the tests with `JSDom` 
+- JSDOM is now optional. Standard tests are running without JSDOM. `npm run test:jsd` runs the tests with `JSDom`
 
 # 0.4.0
 
