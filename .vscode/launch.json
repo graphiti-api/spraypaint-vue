@@ -1,6 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
+      {
+            "name": "Run Tests",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "${workspaceRoot}/test/setup/setup-mocha.js",
+                "--require", "ignore-styles",
+                "--require", "ts-node/register",
+                "-u", "tdd",
+                "--timeout", "15000",
+                "--recursive",
+                "--check-leaks",
+                "--colors",
+                "${workspaceRoot}/out/test"
+            ],
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/out"
+        },
         {
             "name": "Launch",
             "type": "node",
