@@ -13,5 +13,5 @@ BIN=$PWD/node_modules/.bin
   npm config set spin false
   # Install all NPM packages
   npm i
-
+ # Bundle
  npm run build

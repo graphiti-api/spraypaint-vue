@@ -1,5 +1,10 @@
 ## Changelog
 
+# 0.5.0
+
+- BC!! removed shell scripts
+- BC!! made it Windows friendly
+
 # 0.4.4
 
 - changed a few TSLint rules
