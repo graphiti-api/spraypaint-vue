@@ -1,8 +1,8 @@
 ## Changelog
 
-# 0.5.4
+# 0.5.7
 
-- removed test folder. Moved test into src folder. __test__. Aka React
+- fixed bugs
 
 # 0.5.3
 

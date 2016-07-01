@@ -1,4 +1,4 @@
-import SinonDemo from '../../sinon_demo';
+import SinonDemo from '../../../src/sinon_demo';
 
 describe('Sinon’s Spy', () => {
 

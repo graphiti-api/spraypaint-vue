@@ -1,4 +1,4 @@
-import Rachelle from '../rachelle';
+import Rachelle from '../../src/rachelle';
 
 const expect = chai.expect;
 
