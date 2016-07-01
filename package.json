@@ -80,7 +80,7 @@
     "rollup-plugin-replace": "1.1.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
-    "tslint": "3.12.1",
+    "tslint": "3.13.0",
     "ts-node": "^0.9.3",
     "typescript": "next"
   },
