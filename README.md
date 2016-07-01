@@ -33,7 +33,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - `build:dev`  - creates a development bundle
 - `build:prod` - creates a production bundle
 - `coverage` - shows the coverage report
-- `cleanup` - remove the dist, coverage and build folders
+- `clean` - remove the dist, coverage and build folders
 - `test` - run all unit tests in the node.js environment
 - `test:jsd` - run all unit tests in the node.js environment with JSDom
 - `lint` - validates all source and test files

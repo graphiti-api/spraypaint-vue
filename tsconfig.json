@@ -15,12 +15,12 @@
         "sourceMap": false,
         "inlineSourceMap": false,
         "suppressImplicitAnyIndexErrors": false,
+        "outDir": "build/",
         "types": ["mocha", "chai", "sinon"]
 },
     "filesGlob": [
     "src/**/*.ts",
-    "src/**/*.tsx",
-    "!./node_modules/**"
+    "src/**/*.tsx"
 ],
     "exclude": [
     "scripts",
