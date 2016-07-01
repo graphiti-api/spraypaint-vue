@@ -1,6 +1,6 @@
---require test/setup/setup-mocha.js
+--require config/setup/setup-mocha.js
 --require ignore-styles
---require ts-node/register 
+--require ts-node/register
 --recursive
 --check-leaks
 --watch-extensions tsx,ts

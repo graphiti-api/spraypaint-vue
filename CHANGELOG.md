@@ -1,5 +1,9 @@
 ## Changelog
 
+# 0.5.4
+
+- removed test folder. Moved test into src folder. __test__. Aka React
+
 # 0.5.3
 
 - fixed issue with debug mode in VSCode
