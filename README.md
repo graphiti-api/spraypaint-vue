@@ -17,6 +17,7 @@ Estimated bundle time: `0.3 ms`. (*Depends on your computer.*)
 - [x] Consistent code style with [TSLint](https://palantir.github.io/tslint/).
 - [x] Coverage report with [Istanbul](https://github.com/gotwarlost/istanbul)
 - [x] Dead code elimination
+- [x] VSCode integration
 - [x] Optional [JSDOM](https://github.com/tmpvar/jsdom) 
 - [x] [Rollup](http://rollupjs.org/) for bundling
 - [x] [Bublé](https://gitlab.com/Rich-Harris/buble) as the ES2015 compiler

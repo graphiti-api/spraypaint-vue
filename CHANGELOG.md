@@ -1,5 +1,14 @@
 ## Changelog
 
+# 0.5.1
+
+- changed how environment variabels work. Don't trust Rollup on that one!
+- added support for VSCode
+- added debugging task for use with VSCode
+- build tasks now runs in paralell
+- NPM packages updates
+- minor cleanup
+
 # 0.5.0
 
 - BC!! removed shell scripts
