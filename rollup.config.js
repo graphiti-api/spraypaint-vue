@@ -15,18 +15,18 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
   .replace( '${homepage}', pkg.homepage )
 
 export default {
-  entry: `build/src/${pkg.name}.js`,
+  entry: `./build/src/${pkg.name}.js`,
   plugins: [
       isProduction ? uglify({}) : {},
-      commonjs({ include: 'node_modules/**' }),
-      buble({exclude: 'node_modules/**'}),
+      commonjs({ include: './node_modules/**' }),
+      buble({exclude: './node_modules/**'}),
 		  replace({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) })
   ],
   banner:  banner,
   sourceMap: false,
   moduleName: pkg.name,
   targets: [ 
-    {  dest: `dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`, format: 'umd' }
+    {  dest: `./dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`, format: 'umd' }
   ]
 };
 
