@@ -15,7 +15,7 @@ const banner = readFileSync( 'banner.js', 'utf-8' )
   .replace( '${homepage}', pkg.homepage )
 
 export default {
-  entry: `./build/${pkg.name}.js`,
+  entry: `./build/src/${pkg.name}.js`,
   plugins: [
       isProduction ? uglify({}) : {},
       commonjs({ include: './node_modules/**' }),
@@ -25,8 +25,9 @@ export default {
   banner:  banner,
   sourceMap: false,
   moduleName: pkg.name,
-  targets: [
+  targets: [ 
     {  dest: `./dist/${pkg.name}.${isProduction ? 'min.js' : 'js'}`, format: 'umd' }
   ]
 };
 
+ 

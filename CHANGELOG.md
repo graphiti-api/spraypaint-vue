@@ -1,9 +1,5 @@
 ## Changelog
 
-# 0.5.7
-
-- fixed bugs
-
 # 0.5.3
 
 - fixed issue with debug mode in VSCode
