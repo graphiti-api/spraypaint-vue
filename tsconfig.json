@@ -22,10 +22,16 @@
     "src/**/*.ts",
     "src/**/*.tsx"
 ],
+    "formatCodeOptions": {
+       "indentSize": 2,
+       "tabSize": 2
+},
     "exclude": [
     "scripts",
     "build",
-    "node_modules"
+    "node_modules",
+    "test/setup/setup-dom.js",
+    "test/setup/setup-node.js"
 ],
     "compileOnSave": false,
     "buildOnSave": false

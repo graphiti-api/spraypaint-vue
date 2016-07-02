@@ -1,11 +1,15 @@
---require test/setup/setup-mocha.js
+--require test/setup/setup-node.js
 --require ignore-styles
---require ts-node/register 
---recursive
---check-leaks
---watch-extensions tsx,ts
---reporter spec
+--require ts-node/register
 --ui bdd
---colors
---timeout 15000
+
+--reporter spec
 --bail
+--full-trace
+--check-leaks
+--globals expect,mock,sandbox,spy,stub,useFakeServer,useFakeTimers,useFakeXMLHttpRequest
+--watch-extensions tsx,ts
+--colors
+
+--recursive
+--timeout 5000
