@@ -1,38 +1,38 @@
 {
-    "compilerOptions": {
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "lib/",
     "allowJs": false,
-        "allowUnreachableCode": false,
-        "declaration": false,
-        "experimentalDecorators": true,
-        "jsx": "preserve",
-        "moduleResolution": "node",
-        "noEmitHelpers": true,
-        "newLine": "LF",
-        "noImplicitAny": true,
-        "noLib": false,
-        "removeComments": false,
-        "strictNullChecks": true,
-        "sourceMap": false,
-        "inlineSourceMap": false,
-        "suppressImplicitAnyIndexErrors": false,
-        "outDir": "build/",
-        "types": ["mocha", "chai", "sinon"]
-},
-    "filesGlob": [
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "noImplicitAny": true,
+    "noLib": false,
+    "removeComments": false,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "inlineSourceMap": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "outDir": "lib/"
+  },
+  "formatCodeOptions": {
+    "indentSize": 2,
+    "tabSize": 2
+  },
+  "include": [
     "src/**/*.ts",
-    "src/**/*.tsx"
-],
-    "formatCodeOptions": {
-       "indentSize": 2,
-       "tabSize": 2
-},
-    "exclude": [
-    "scripts",
-    "build",
-    "node_modules",
+    "src/**/*.tsx",
+    "types/**/*.d.ts"
+  ],
+  "exclude": [
+    "scripts/",
+    "build/",
+    "node_modules/",
     "test/setup/setup-dom.js",
     "test/setup/setup-node.js"
-],
-    "compileOnSave": false,
-    "buildOnSave": false
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
 }

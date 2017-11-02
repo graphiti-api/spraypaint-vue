@@ -1,6 +1,6 @@
-import Rachelle from '../../src/rachelle';
+import Rachelle from '../src/index';
 
-const expect = chai.expect;
+import { expect } from 'chai';
 
 describe('Simple tests', () => {
 
@@ -17,6 +17,6 @@ describe('Simple tests', () => {
     });
 
     it('should cover "b" and return true', () => {
-        expect(Rachelle.b()).to.be.true;
+        expect(Rachelle.b()).to.eql(true);
     });
 });

@@ -1,3 +1,7 @@
+# Distributed Files
+/dist/*
+/lib/*
+
 # compiled output
 /tmp
 
@@ -37,3 +41,5 @@ debug.log
 
 # Ignore npm debug log
 npm-debug.log
+
+.rpt2_cache/
