@@ -1,4 +1,4 @@
-# Contributing to Rachelle
+# Contributing
 
 Pull requests are very welcome, but should be within the scope of the project, and follow the repository's code conventions. Before submitting a
 pull request, it's always good to file an issue, so we can discuss the details of the PR.
@@ -27,33 +27,24 @@ You can request a new feature by submitting an issue . If you would like to impl
 
 ## Pull Requests
 
-1. At Rachelle, we have a single Rachelle Open Source Contributor License Agreement that we ask contributors to electronically sign before merging in their
-Pull Requests. Here's the CLA's human-readable summary:
+1. [Fork](https://github.com/wadetandy/rollup-typescript-mocha-template/fork/) the repository and create your branch from master.
 
-> You are saying that you have the right to give us this code, which is either your own code, or code that your company allows you to publish.
-> You want to give us this code. We may decide to use this code. You are not going to sue people who use this code, because, after all,
-> you are giving it to an open source project! And if you include code that you didn't write, you'll tell us about it by including the open
-> source license to such code in your contribution so we'll know about it. You are not promising that this code works well, or that you
-> will support it, and we're OK with that.
+2. Ensure that all tests are passing prior to submitting.
 
-2. [Fork](https://github.com/kflash/rachelle/fork/) the repository and create your branch from master.
+3. If you are adding new functionality, or fixing a bug, provide test coverage.
 
-3. Ensure that all tests are passing prior to submitting.
+4. Ensure the test suite passes
 
-4. If you are adding new functionality, or fixing a bug, provide test coverage.
+5. Make sure your code lints - we've done our best to make sure these rules match our internal linting guidelines.
 
-5. Ensure the test suite passes
+6. If you've changed APIs, update the documentation.
 
-6. Make sure your code lints - we've done our best to make sure these rules match our internal linting guidelines.
+7. Follow syntax guidelines detailed below.
 
-7. If you've changed APIs, update the documentation.
-
-8. Follow syntax guidelines detailed below.
-
-9. Push the changes to your fork and submit a pull request. If this resolves any issues, please mark in the body resolve #ID within the body of your pull request.
+8. Push the changes to your fork and submit a pull request. If this resolves any issues, please mark in the body resolve #ID within the body of your pull request.
    This allows for github to automatically close the related issue once the pull request is merged.
 
-10. Last step, submit the pull request!
+9. Last step, submit the pull request!
 
 ## Style Guide
 
@@ -80,4 +71,4 @@ will guide you in the right direction.
 
 ## License
 
-By contributing to Rachelle, you agree that your contributions will be licensed under its MIT license.
+By contributing to this project, you agree that your contributions will be licensed under its MIT license.
