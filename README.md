@@ -8,7 +8,7 @@ You'll only need this when opting-in to the `sync = true` feature - it ensures i
 ### Usage
 
 ```ts
-const JSORMVue = require('jsorm-vue')
+const { JSORMVue } = require('jsorm-vue')
 Vue.use(JSORMVue)
 ```
 
