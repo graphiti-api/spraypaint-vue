@@ -1,6 +1,6 @@
 {
   "name": "jsorm-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue bindings for jsorm, the JSONAPI ORM",
   "main": "dist/jsorm-vue.js",
   "module": "lib/jsorm-vue.js",
@@ -32,9 +32,9 @@
   "devDependencies": {
     "@types/chai": "4.0.4",
     "@types/mocha": "2.2.44",
+    "@types/node": "^8.0.47",
     "@types/sinon": "2.3.7",
     "@types/sinon-chai": "2.7.29",
-    "@types/node": "^8.0.47",
     "chai": "4.1.2",
     "codecov": "3.0.0",
     "coveralls": "3.0.0",
