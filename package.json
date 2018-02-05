@@ -1,10 +1,10 @@
 {
-  "name": "jsonapi",
+  "name": "jsorm-vue",
   "version": "0.0.1",
-  "description": "JSONAPI Foundation Lib",
-  "main": "dist/jsonapi.js",
-  "module": "lib/jsonapi.js",
-  "author": "Wade Tandy",
+  "description": "Vue bindings for jsorm, the JSONAPI ORM",
+  "main": "dist/jsorm-vue.js",
+  "module": "lib/jsorm-vue.js",
+  "author": "Lee Richmond",
   "license": "MIT",
   "files": [
     "src",
@@ -34,6 +34,7 @@
     "@types/mocha": "2.2.44",
     "@types/sinon": "2.3.7",
     "@types/sinon-chai": "2.7.29",
+    "@types/node": "^8.0.47",
     "chai": "4.1.2",
     "codecov": "3.0.0",
     "coveralls": "3.0.0",
@@ -58,10 +59,11 @@
     "sinon-chai": "2.14.0",
     "ts-node": "3.3.0",
     "tslint": "5.8.0",
-    "typescript": "2.6.1"
+    "typescript": "2.6.1",
+    "vue": "^2.5.13"
   },
-  "dependencies": {
-    "@types/node": "^8.0.47"
+  "peerDependencies": {
+    "vue": "^2.5.13"
   },
   "npmFileMap": [
     {
