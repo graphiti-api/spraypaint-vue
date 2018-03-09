@@ -64,7 +64,9 @@ export class JSORMVue {
 
           if (value) {
             if (Array.isArray(value)) {
-              value.forEach((v) => { v.unlisten() })
+              value.forEach((v) => {
+                if (v['klass']) v.unlisten()
+              })
             } else {
               if (value && value['klass']) value.unlisten()
             }
