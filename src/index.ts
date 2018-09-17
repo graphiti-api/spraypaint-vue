@@ -22,12 +22,12 @@ const overrideSetter = (object: any, key: any, override: any) => {
   }
 }
 
-const cleanupJsormArray = (oldVal: any, newVal: any) => {
+const cleanupSpraypaintArray = (oldVal: any, newVal: any) => {
   if (oldVal !== newVal) {
     if (Array.isArray(oldVal)) {
-      let isJsorm = (oldVal[0] && oldVal[0]['klass']) ||
+      let isSpraypaint = (oldVal[0] && oldVal[0]['klass']) ||
         (newVal[0] && newVal[0]['klass'])
-      if (isJsorm) {
+      if (isSpraypaint) {
         oldVal.forEach((o: any) => {
           if (newVal.indexOf(o) === -1) {
             o.unlisten()
@@ -38,9 +38,9 @@ const cleanupJsormArray = (oldVal: any, newVal: any) => {
   }
 }
 
-const cleanupJsorm = (oldVal: any, newVal: any) => {
+const cleanupSpraypaint = (oldVal: any, newVal: any) => {
   if (Array.isArray(oldVal)) {
-    cleanupJsormArray(oldVal, newVal)
+    cleanupSpraypaintArray(oldVal, newVal)
   } else {
     if (oldVal && oldVal['klass']) {
       oldVal.unlisten()
@@ -48,13 +48,13 @@ const cleanupJsorm = (oldVal: any, newVal: any) => {
   }
 }
 
-export class JSORMVue {
+export class SpraypaintVue {
   static install(_Vue: typeof Vue) {
     _Vue.mixin({
       created() {
         Object.keys(this.$data).forEach((k) => {
           overrideSetter(this.$data, k, (oldVal: any, newVal: any) => {
-            if (oldVal !== newVal) cleanupJsorm(oldVal, newVal)
+            if (oldVal !== newVal) cleanupSpraypaint(oldVal, newVal)
           })
         })
       },

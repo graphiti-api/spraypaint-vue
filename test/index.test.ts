@@ -1,4 +1,4 @@
-import { JSORMVue } from '../src/index';
+import { SpraypaintVue } from '../src/index';
 
 import { expect } from 'chai';
 

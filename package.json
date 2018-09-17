@@ -1,9 +1,9 @@
 {
-  "name": "jsorm-vue",
+  "name": "spraypaint-vue",
   "version": "0.0.3",
-  "description": "Vue bindings for jsorm, the JSONAPI ORM",
-  "main": "dist/jsorm-vue.js",
-  "module": "lib/jsorm-vue.js",
+  "description": "Vue bindings for Spraypaint Graphiti Client",
+  "main": "dist/spraypaint-vue.js",
+  "module": "lib/spraypaint-vue.js",
   "author": "Lee Richmond",
   "license": "MIT",
   "files": [

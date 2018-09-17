@@ -1,6 +1,7 @@
 # Distributed Files
 /dist/*
 /lib/*
+yarn-error.log
 
 # compiled output
 /tmp
